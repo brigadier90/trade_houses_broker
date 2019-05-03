@@ -1,0 +1,225 @@
+
+
+#banner {
+
+	position: relative;
+
+	#banner-bg {
+		width: 100%;
+	}
+
+	section#banner-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+
+
+
+		#banner-logo {
+			padding-top: 40px;
+
+
+			@include media-breakpoint-down(lg) {
+
+				width: 170px;
+				padding-top:30px;
+			}
+
+			@include media-breakpoint-down(md) {
+				width: 150px;
+				padding-top: 25px;
+			}
+
+			@include media-breakpoint-down(sm) {
+
+				width: 130px;
+				padding-top: 20px;
+
+			}
+
+			@include media-breakpoint-down(xs) {
+			}
+		}
+
+		
+
+		.content-col {
+
+			text-align: left;
+			margin-top: 80px;
+			position: relative;
+
+			h2 {
+				font-size: 1.7vw;
+			}
+
+			p {
+				font-size: 1.6vw;
+			}
+
+			a {
+				font-size: 1.1vw;
+			}
+			
+
+			@include media-breakpoint-down(lg) {
+				text-align: center !important;
+				margin-top: 30px;
+
+				h2 {
+					font-size: 1.8vw;
+				}
+
+				p {
+					font-size: 1.7vw;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				h2 {
+					font-size: 1.9vw;
+				}
+
+				p {
+					font-size: 1.8vw;
+				}
+			}
+
+			@include media-breakpoint-down(sm) {
+				h2 {
+					font-size: 2.5vw;
+				}
+
+				p {
+					font-size: 2.3vw;
+				}
+			}
+
+			@include media-breakpoint-down(xs) {
+
+
+				h2 {
+					font-size: 3vw;
+				}
+
+				p {
+					font-size: 2.8vw;
+				}
+
+			}
+
+
+			
+		}
+
+		.tablet-col {
+
+			.tablet {
+			    position: relative;
+			    padding-top: 25px;
+			    padding-bottom: 67.5%;
+			    height: 0;
+			    top: 50%;
+
+			    @include media-breakpoint-down(lg) {
+					top: 0;
+				}
+
+			   	iframe {
+				    box-sizing: border-box;
+				    background: url(../img/tablet.png) center center no-repeat;
+				    background-size: contain;
+				    padding: 8.8% 11.7% 9.6% 10.2%;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				    height: 100%;
+				}
+			}
+
+		}
+	}
+
+
+}
+
+#benefits {
+
+	.phone {
+		img {
+			width: 100%;
+		}
+	}
+
+	.list {
+		
+		.title {
+			margin-top: 35px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		.benefit {
+			font-size: 14px;
+		}
+
+		ul {
+			list-style: none;
+			margin-bottom: 30px;
+			margin-left: 20px;
+			padding-left: 0;
+
+			li {
+				font-size: 13px;
+				margin-left: 0;
+				padding-left: 0;
+
+				&:before {
+					content: '\2014';
+					position: absolute;
+					margin-left: -20px;
+
+				}
+			}
+		}
+	}
+
+	.mobile {
+		text-align: center;
+
+		ul {
+			li {
+
+				&:before {
+					content: "";
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+#potential {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

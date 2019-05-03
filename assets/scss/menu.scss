@@ -1,0 +1,189 @@
+#top-nav {
+	padding: 0 1rem;
+	border-bottom: 1px solid $gray-200;
+
+	.left, .right {
+		.nav-item {
+
+			.nav-link {
+				font-size: 13px;
+				padding: 0 1rem;
+				margin: 0.4rem 0;
+
+				i {
+					position: relative;
+					top: 1px;
+				}
+			}
+		}	
+	}
+	
+	.left {
+		.nav-item:first-of-type {
+
+			
+
+			.nav-link:first-of-type {
+				padding-left: 0;
+				border-right: 1px solid #dddddd;
+				
+
+			}
+		}	
+	}
+
+	.right {
+
+		.nav-item:first-of-type {
+
+			
+
+			.nav-link:first-of-type {
+				border-right: 1px solid #dddddd;
+			}
+		}
+
+		.nav-item:last-of-type {
+			.nav-link {
+				padding-right: 0;
+
+			}
+		}
+	}
+	
+}
+
+#bottom-nav {
+	padding: 0 1rem;
+	background: $white;
+
+	.navbar-brand {
+
+		position: relative;
+
+		img {
+			width: 110px;
+			position: relative;
+			z-index: 2;
+
+			@include media-breakpoint-down(lg) {
+				width: 90px;
+
+			}
+		}
+		
+		@include media-breakpoint-down(lg) {
+			padding: 0.5rem 0;
+		}
+		
+	}
+
+	.nav-item {
+		.nav-link {
+
+			padding: 1.5rem 0.6rem;
+			font-size: 13px;
+
+
+			&:hover {
+				background: $primary;
+				color: $white;
+			}
+		}
+
+		.dropdown-toggle::after {
+			display: none;
+		}
+
+		.dropdown-menu {
+
+			top: calc(100% - 10px);
+			min-width: 10rem;
+			font-size: 13px;
+			background-color: $white;
+			border-top: 3px solid $primary;
+			border-radius: 0;
+			padding: 0;
+			top: calc(100% - 2px);
+
+			
+
+			.dropdown-divider {
+			    margin: 0;
+			}
+
+			.dropdown-item {
+				display: block;
+			    width: 100%;
+			    padding: 0.75rem 1.5rem;
+			    clear: both;
+			    font-weight: 400;
+			    color: $dark;
+			    text-align: inherit;
+			    white-space: nowrap;
+			    background-color: transparent;
+			    border: 0;
+
+			    &:hover {
+			    	background: $primary;
+			    	color: $white;
+			    }
+			}
+
+
+		}
+
+
+
+
+
+
+
+		// &:hover {
+		// 	@include media-breakpoint-up(md) {
+		// 		.dropdown-menu {
+		// 			display: block;
+		// 		}
+		// 	}
+			
+		// }
+	}
+
+	#languages-nav-item {
+
+		.dropdown-toggle::after {
+			display: inline-block;
+		}
+
+		.nav-link {
+			img {
+				width: 18px;
+				position: relative;
+				top: -1px;
+			}
+		}
+
+		.dropdown-menu {
+
+			.dropdown-item {
+				img {
+					width: 18px;
+					position: relative;
+					top: -1px;
+				}
+			}
+		}
+	
+	}
+
+
+
+	.navbar-toggler {
+		border: none;
+	}
+
+
+
+
+
+}
