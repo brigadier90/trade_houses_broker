@@ -2,114 +2,93 @@
 
 #banner {
 
-	position: relative;
-
-	#banner-bg {
-		width: 100%;
-	}
-
-	section#banner-content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		background: url(../img/green-bg.jpeg) no-repeat center center;
+    	@include prefix(background-size, cover);
+		height: 500px;
 		text-align: center;
+		position: relative;
+  		z-index: 1;
 
+  		
+  		
+  		&::after {
 
-
-		#banner-logo {
-			padding-top: 40px;
-
-
-			@include media-breakpoint-down(lg) {
-
-				width: 170px;
-				padding-top:30px;
-			}
-
-			@include media-breakpoint-down(md) {
-				width: 150px;
-				padding-top: 25px;
-			}
+  			background: #ffffff;
+			bottom: -75px;
+			content: '';
+			display: block;
+			height: 50%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			@include prefix(transform, skewY(-3.5deg));
+			@include prefix(transform-origin, 100%);
+			z-index: -1;
 
 			@include media-breakpoint-down(sm) {
-
-				width: 130px;
-				padding-top: 20px;
-
+				@include prefix(transform, skewY(-5.5deg));
+				height: 40%;
 			}
+  		}
 
-			@include media-breakpoint-down(xs) {
+		img#banner-logo {
+			width: 200px; 
+			padding-top: 40px;
+
+			@include media-breakpoint-down(sm) {
+				width: 180px;
+				padding-top: 25px;
 			}
 		}
 
-		
+		.content-container {
+			margin-top: 80px;
+
+			@include media-breakpoint-down(lg) {
+				margin-top: 50px;
+			}	 
+
+			@include media-breakpoint-down(sm) {
+				margin-top: 35px;
+			}
+		}
+
 
 		.content-col {
 
 			text-align: left;
-			margin-top: 80px;
-			position: relative;
+
+			
 
 			h2 {
-				font-size: 1.7vw;
+				font-size: 22px;
 			}
 
 			p {
-				font-size: 1.6vw;
+				font-size: 18px;
 			}
 
 			a {
-				font-size: 1.1vw;
+				font-size: 16px;
 			}
-			
 
 			@include media-breakpoint-down(lg) {
-				text-align: center !important;
-				margin-top: 30px;
+				text-align: center;
+  			}
 
+  			@include media-breakpoint-down(sm) {
 				h2 {
-					font-size: 1.8vw;
+					font-size: 18px;
 				}
 
 				p {
-					font-size: 1.7vw;
-				}
-			}
-
-			@include media-breakpoint-down(md) {
-				h2 {
-					font-size: 1.9vw;
+					font-size: 15px;
 				}
 
-				p {
-					font-size: 1.8vw;
+				a {
+					font-size: 13px;
 				}
-			}
-
-			@include media-breakpoint-down(sm) {
-				h2 {
-					font-size: 2.5vw;
-				}
-
-				p {
-					font-size: 2.3vw;
-				}
-			}
-
-			@include media-breakpoint-down(xs) {
-
-
-				h2 {
-					font-size: 3vw;
-				}
-
-				p {
-					font-size: 2.8vw;
-				}
-
-			}
+  			}
 
 
 			
@@ -117,12 +96,23 @@
 
 		.tablet-col {
 
+			position: relative;
+			left: -100px;
+			top: 30px;
+			z-index: 100;
+
+			@include media-breakpoint-down(lg) {
+				left: 0;
+				top: 0;
+			}
+
+
+
 			.tablet {
 			    position: relative;
 			    padding-top: 25px;
 			    padding-bottom: 67.5%;
 			    height: 0;
-			    top: 50%;
 
 			    @include media-breakpoint-down(lg) {
 					top: 0;
@@ -130,24 +120,89 @@
 
 			   	iframe {
 				    box-sizing: border-box;
-				    background: url(../img/tablet.png) center center no-repeat;
+				    background: url(../img/tablet-2.png) center center no-repeat;
 				    background-size: contain;
-				    padding: 8.8% 11.7% 9.6% 10.2%;
+				    padding: 8.5% 11.7% 9.6% 10.2%;
 				    position: absolute;
 				    top: 0;
 				    left: 0;
 				    width: 100%;
 				    height: 100%;
+
+					@include media-breakpoint-down(lg) {
+						padding: 7.9% 11.2% 8.5% 10.2%
+					}
+
+					@include media-breakpoint-down(md) {
+						padding: 7.5% 11.2% 8.3% 10.2%
+					}
+
+					@include media-breakpoint-down(sm) {
+						padding: 8.0% 11.0% 8.8% 10.2%
+					}
+
+					@include media-breakpoint-down(xs) {
+						padding: 8.3% 11.6% 9.0% 10.2%;
+					}
+
+					@media (min-width: 450px) and (max-width: 510px) {
+						padding: 8.5% 11.7% 9.5% 10.0%;
+					}
+
+					@media (min-width: 400px) and (max-width: 449px) {
+						padding: 9% 11.7% 10% 10.0%;
+					}
+
+					@media (min-width: 360px) and (max-width: 399px) {
+						padding: 9.5% 11.7% 10.2% 10.0%;
+					}
+
+					@media (max-width: 359px) {
+						padding: 9.8% 11.7% 10.5% 10.0%;
+					}
+
 				}
 			}
 
 		}
-	}
 
 
 }
 
 #benefits {
+	position: relative;
+	z-index: 20;
+	margin-top: 20px;
+	padding-bottom: 50px;
+
+	@include media-breakpoint-down(lg) {
+		margin-top: 210px;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-top: 270px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 100px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 80px;
+	}
+
+	@media (min-width: 500px) and (max-width: 550px) {
+		margin-top: 60px;
+	}
+
+	@media (min-width: 400px) and (max-width: 499px) {
+		margin-top: 45px;
+	}
+
+	@media (max-width: 399px) {
+		margin-top: 25px;
+	}
+
 
 	.phone {
 		img {
@@ -206,7 +261,196 @@
 }
 
 #potential {
+
+		background: #fff8f8;
+		position: relative;
+  		z-index: 1;
+  		padding-top: 150px;
+  		padding-bottom: 110px;
+
+  		&::before {
+
+  			background: #ffffff;
+			top: -200px;
+			width: 100%;
+			content: '';
+			display: block;
+			height: 200px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			@include prefix(transform, skewY(-3.5deg));
+			@include prefix(transform-origin, 100%);
+			z-index: 3;
+
+			@include media-breakpoint-down(sm) {
+				@include prefix(transform, skewY(-5.5deg));
+				height: 200px;
+			}
+  		}
+
+  		
+
+		.bg {
+			height: 100%;
+			background: url(../img/ptential-bg.jpg) no-repeat center center;
+    		@include prefix(background-size, cover);
+
+    		position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 50%;
+			bottom: 0;
+			left: 0;
+
+    		&:after {
+				content: '';
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+50,f8f8f8+92,f8f8f8+100&0.27+0,1+100 */
+				background: -moz-linear-gradient(left, rgba(248,248,248,0.27) 0%, rgba(248,248,248,0.64) 50%, rgba(248,248,248,0.94) 92%, rgba(248,248,248,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, rgba(248,248,248,0.27) 0%,rgba(248,248,248,0.64) 50%,rgba(248,248,248,0.94) 92%,rgba(248,248,248,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(248,248,248,0.27) 0%,rgba(248,248,248,0.64) 50%,rgba(248,248,248,0.94) 92%,rgba(248,248,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+
+
+			}
+
+			@include media-breakpoint-down(lg) {
+				right: 0;
+
+				&:after {
+					background: -moz-linear-gradient(left, rgba(248,248,248,0.27) 0%, rgba(248,248,248,0.64) 10%, rgba(248,248,248,0.94) 28%, rgba(248,248,248,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, rgba(248,248,248,0.27) 0%,rgba(248,248,248,0.64) 10%,rgba(248,248,248,0.94) 28%,rgba(248,248,248,1) 22%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(248,248,248,0.27) 0%,rgba(248,248,248,0.64) 10%,rgba(248,248,248,0.94) 28%,rgba(248,248,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+				}
+			}
+
+  		}
+
+
+  		.content-col {
+
+  			position: relative;
+  			z-index: 5;
+			h2 {
+				font-size: 22px;
+			}
+
+			.title-2 {
+				margin-top: 40px;
+			}
+
+			.list {
+				padding-top: 30px;
+				padding-bottom: 50px;
+
+				.item {
+
+					margin-bottom: 35px;
+
+					.image {
+						float: left;
+						img {
+							width: 60px;
+						}
+					}
+
+					.text {
+						margin: 0;
+						padding: 0;
+						margin-left: 20px;
+						font-size: 18px;
+					}
+					
+				}	
+
+				.item:last-of-type {
+					margin-bottom: 0;
+				}
+			}	
+
+			.links {
+			
+
+				a {
+					display: inline-block;
+					margin-right: 20px;
+					min-width: 110px;
+
+					@include media-breakpoint-down(lg) {
+						font-size: 14px;
+						min-width: 70px;
+						margin-right: 0;
+		  			}
+
+		  			@include media-breakpoint-down(sm) {
+						display: block;
+						margin-right: 0;
+						margin-bottom: 25px;
+						width: 110px;
+		  			}
+				}
+
+				a:last-of-type {
+					@include media-breakpoint-down(sm) {
+						margin-bottom: 0;
+						
+		  			}
+				}
+
+				@include media-breakpoint-down(lg) {
+					display: inline-block;
+					text-align: center;
+				}
+			}
+
+			@include media-breakpoint-down(lg) {
+				text-align: center;
+				margin-right: 0;
+  			}
+
+  			@include media-breakpoint-down(sm) {
+				h2 {
+					font-size: 18px;
+				}
+
+				
+  			}
+  		}
 	
+}
+
+footer {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	.middle p {
+		font-size: 10px;
+		padding-top: 15px;
+		border-top: 2px solid #ffffff;
+	}
+
+	.bottom {
+
+		.left {
+			p {
+				font-size: 12px;
+			}
+		}
+		.right {
+			a {
+				img {
+					width: 40px;
+				}
+			}
+		}
+	}
 }
 
 

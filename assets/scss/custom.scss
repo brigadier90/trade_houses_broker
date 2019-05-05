@@ -10,6 +10,11 @@
 	}
 
 	@font-face {
+	  font-family: "opensans-medium";
+	  src: url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+	}
+
+	@font-face {
 	  font-family: "opensans-bold";
 	  src: url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
 	}
@@ -21,6 +26,7 @@
 
 	$text-font-light: "opensans-light";
 	$text-font-regular: "opensans-regular";
+	$text-font-medium: "opensans-medium";
 	$text-font-bold: "opensans-bold";
 
 	@import "font-awesome.min";
@@ -29,14 +35,14 @@
 
 
 //VARIABLE OVERRIDES
-	$primary: #d04f2f; //orange
+	$primary: #d95331; //orange
 	$secondary: #2d645f; //green
 	$danger: #9A0B13; //darker red
 
 	$success: #00943e; //green
 
 	//from flat ui pallete
-	$light: #aaaaaa;
+	$light: #f5f5f5;
 	$dark: #181715;
 
 	
@@ -195,19 +201,19 @@
 	}
 
 	.heading-light {
-		font-family: $heading-font-light;
+		font-family: $text-font-light;
 	}
 
 	.heading-medium {
-		font-family: $heading-font-medium;
+		font-family: $text-font-medium;
 	}
 
 	.heading-regular {
-		font-family: $heading-font-regular;
+		font-family: $text-font-regular;
 	}
 
 	.heading-bold {
-		font-family: $heading-font-bold;
+		font-family: $text-font-bold;
 	}
 
 	.text-light {
@@ -216,6 +222,10 @@
 
 	.text-regular {
 		font-family: $text-font-regular;
+	}
+
+	.text-medium {
+		font-family: $text-font-medium;
 	}
 
 	.text-bold {
