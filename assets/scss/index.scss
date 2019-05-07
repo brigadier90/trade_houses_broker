@@ -42,7 +42,7 @@
 		}
 
 		.content-container {
-			margin-top: 80px;
+			margin-top: 60px;
 
 			@include media-breakpoint-down(lg) {
 				margin-top: 50px;
@@ -61,11 +61,11 @@
 			
 
 			h2 {
-				font-size: 22px;
+				font-size: 28px;
 			}
 
 			p {
-				font-size: 18px;
+				font-size: 22px;
 			}
 
 			a {

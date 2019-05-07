@@ -12993,7 +12993,7 @@ a.text-dark:hover, a.text-dark:focus {
         width: 180px;
         padding-top: 25px; } }
   #banner .content-container {
-    margin-top: 80px; }
+    margin-top: 60px; }
     @media (max-width: 1199.98px) {
       #banner .content-container {
         margin-top: 50px; } }
@@ -13003,9 +13003,9 @@ a.text-dark:hover, a.text-dark:focus {
   #banner .content-col {
     text-align: left; }
     #banner .content-col h2 {
-      font-size: 22px; }
+      font-size: 28px; }
     #banner .content-col p {
-      font-size: 18px; }
+      font-size: 22px; }
     #banner .content-col a {
       font-size: 14px; }
     @media (max-width: 1199.98px) {
