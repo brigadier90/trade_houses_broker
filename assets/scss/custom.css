@@ -13103,18 +13103,27 @@ a.text-dark:hover, a.text-dark:focus {
   #benefits .list .title {
     margin-top: 35px; }
   #benefits .list h3 {
-    font-size: 18px; }
+    font-size: 26px; }
+    @media (max-width: 1199.98px) {
+      #benefits .list h3 {
+        font-size: 18px; } }
   #benefits .list .benefit {
-    font-size: 14px; }
+    font-size: 20px; }
+    @media (max-width: 1199.98px) {
+      #benefits .list .benefit {
+        font-size: 14px; } }
   #benefits .list ul {
     list-style: none;
     margin-bottom: 30px;
     margin-left: 20px;
     padding-left: 0; }
     #benefits .list ul li {
-      font-size: 13px;
+      font-size: 18px;
       margin-left: 0;
       padding-left: 0; }
+      @media (max-width: 1199.98px) {
+        #benefits .list ul li {
+          font-size: 13px; } }
       #benefits .list ul li:before {
         content: '\2014';
         position: absolute;
@@ -13126,7 +13135,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-left: 0; }
 
 #potential {
-  background: #fff8f8;
+  background: #f2f2f2;
   position: relative;
   z-index: 1;
   padding-top: 150px;
@@ -13181,11 +13190,11 @@ a.text-dark:hover, a.text-dark:focus {
       bottom: 0;
       left: 0;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+50,f8f8f8+92,f8f8f8+100&0.27+0,1+100 */
-      background: -moz-linear-gradient(left, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 50%, rgba(248, 248, 248, 0.94) 92%, #f8f8f8 100%);
+      background: -moz-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
       /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 50%, rgba(248, 248, 248, 0.94) 92%, #f8f8f8 100%);
+      background: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
       /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 50%, rgba(248, 248, 248, 0.94) 92%, #f8f8f8 100%);
+      background: linear-gradient(to right, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
       /* IE6-9 */ }
@@ -13193,11 +13202,11 @@ a.text-dark:hover, a.text-dark:focus {
       #potential .bg {
         right: 0; }
         #potential .bg:after {
-          background: -moz-linear-gradient(left, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 10%, rgba(248, 248, 248, 0.94) 28%, #f8f8f8 100%);
+          background: -moz-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 10%, rgba(242, 242, 242, 0.94) 28%, #f2f2f2 100%);
           /* FF3.6-15 */
-          background: -webkit-linear-gradient(left, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 10%, rgba(248, 248, 248, 0.94) 28%, #f8f8f8 22%);
+          background: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 10%, rgba(242, 242, 242, 0.94) 28%, #f2f2f2 22%);
           /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to right, rgba(248, 248, 248, 0.27) 0%, rgba(248, 248, 248, 0.64) 10%, rgba(248, 248, 248, 0.94) 28%, #f8f8f8 100%);
+          background: linear-gradient(to right, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 10%, rgba(242, 242, 242, 0.94) 28%, #f2f2f2 100%);
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
           /* IE6-9 */ } }
@@ -13205,10 +13214,16 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     z-index: 5; }
     #potential .content-col h2 {
-      font-size: 18px; }
+      font-size: 26px; }
+      @media (max-width: 1199.98px) {
+        #potential .content-col h2 {
+          font-size: 18px; } }
     #potential .content-col .title-2 {
       margin-top: 40px;
-      font-size: 18px; }
+      font-size: 26px; }
+      @media (max-width: 1199.98px) {
+        #potential .content-col .title-2 {
+          font-size: 18px; } }
     #potential .content-col .list {
       padding-top: 30px;
       padding-bottom: 50px; }
@@ -13222,7 +13237,10 @@ a.text-dark:hover, a.text-dark:focus {
           margin: 0;
           padding: 0;
           margin-left: 20px;
-          font-size: 14px; }
+          font-size: 18px; }
+          @media (max-width: 1199.98px) {
+            #potential .content-col .list .item .text {
+              font-size: 14px; } }
       #potential .content-col .list .item:last-of-type {
         margin-bottom: 0; }
     #potential .content-col .links a {
@@ -13259,13 +13277,22 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px; }
   footer .top h6 {
-    font-size: 14px; }
+    font-size: 18px; }
+    @media (max-width: 1199.98px) {
+      footer .top h6 {
+        font-size: 14px; } }
   footer .middle p {
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 15px;
     border-top: 2px solid #ffffff; }
+    @media (max-width: 1199.98px) {
+      footer .middle p {
+        font-size: 10px; } }
   footer .bottom .left p {
-    font-size: 12px; }
+    font-size: 16px; }
+    @media (max-width: 1199.98px) {
+      footer .bottom .left p {
+        font-size: 14px; } }
   footer .bottom .right a img {
     width: 40px; }
 
