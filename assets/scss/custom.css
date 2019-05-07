@@ -13007,7 +13007,7 @@ a.text-dark:hover, a.text-dark:focus {
     #banner .content-col p {
       font-size: 18px; }
     #banner .content-col a {
-      font-size: 16px; }
+      font-size: 14px; }
     @media (max-width: 1199.98px) {
       #banner .content-col {
         text-align: center; } }
@@ -13017,7 +13017,7 @@ a.text-dark:hover, a.text-dark:focus {
       #banner .content-col p {
         font-size: 15px; }
       #banner .content-col a {
-        font-size: 13px; } }
+        font-size: 14px; } }
   #banner .tablet-col {
     position: relative;
     left: -100px;
@@ -13075,6 +13075,8 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 20;
   margin-top: 20px;
   padding-bottom: 50px; }
+  #benefits a {
+    font-size: 14px; }
   @media (max-width: 1199.98px) {
     #benefits {
       margin-top: 210px; } }
@@ -13129,6 +13131,8 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 1;
   padding-top: 150px;
   padding-bottom: 110px; }
+  #potential a {
+    font-size: 14px; }
   #potential::before {
     background: #ffffff;
     top: -200px;
@@ -13201,9 +13205,10 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     z-index: 5; }
     #potential .content-col h2 {
-      font-size: 22px; }
+      font-size: 18px; }
     #potential .content-col .title-2 {
-      margin-top: 40px; }
+      margin-top: 40px;
+      font-size: 18px; }
     #potential .content-col .list {
       padding-top: 30px;
       padding-bottom: 50px; }
@@ -13217,7 +13222,7 @@ a.text-dark:hover, a.text-dark:focus {
           margin: 0;
           padding: 0;
           margin-left: 20px;
-          font-size: 15px; }
+          font-size: 14px; }
       #potential .content-col .list .item:last-of-type {
         margin-bottom: 0; }
     #potential .content-col .links a {
@@ -13253,6 +13258,8 @@ a.text-dark:hover, a.text-dark:focus {
 footer {
   padding-top: 80px;
   padding-bottom: 80px; }
+  footer .top h6 {
+    font-size: 14px; }
   footer .middle p {
     font-size: 10px;
     padding-top: 15px;

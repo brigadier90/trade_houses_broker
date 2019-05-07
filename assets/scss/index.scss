@@ -69,7 +69,7 @@
 			}
 
 			a {
-				font-size: 16px;
+				font-size: 14px;
 			}
 
 			@include media-breakpoint-down(lg) {
@@ -86,7 +86,7 @@
 				}
 
 				a {
-					font-size: 13px;
+					font-size: 14px;
 				}
   			}
 
@@ -175,6 +175,10 @@
 	margin-top: 20px;
 	padding-bottom: 50px;
 
+	a {
+		font-size: 14px;
+	}
+
 	@include media-breakpoint-down(lg) {
 		margin-top: 210px;
 	}
@@ -262,6 +266,10 @@
 
 #potential {
 
+		a {
+			font-size: 14px;
+  		}
+
 		background: #fff8f8;
 		position: relative;
   		z-index: 1;
@@ -339,11 +347,12 @@
   			position: relative;
   			z-index: 5;
 			h2 {
-				font-size: 22px;
+				font-size: 18px;
 			}
 
 			.title-2 {
 				margin-top: 40px;
+				font-size: 18px;
 			}
 
 			.list {
@@ -365,7 +374,7 @@
 						margin: 0;
 						padding: 0;
 						margin-left: 20px;
-						font-size: 15px;
+						font-size: 14px;
 					}
 					
 				}	
@@ -429,6 +438,12 @@
 footer {
 	padding-top: 80px;
 	padding-bottom: 80px;
+
+	.top {
+		h6 {
+			font-size: 14px;
+		}
+	}
 
 	.middle p {
 		font-size: 10px;
