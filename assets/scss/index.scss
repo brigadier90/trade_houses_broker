@@ -178,7 +178,7 @@
 	}
 
 	@include media-breakpoint-down(lg) {
-		margin-top: 120px;
+		margin-top: 250px;
 	}
 
 	@include media-breakpoint-down(md) {
@@ -208,7 +208,12 @@
 
 	.phone {
 		img {
-			width: 100%;
+
+			width: 130%;
+
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -219,15 +224,15 @@
 		}
 
 		h3 {
-			font-size: 26px;
+			font-size: 20px;
 
 			@include media-breakpoint-down(lg) {
-				font-size: 18px;
+				font-size: 20px;
 			}
 		}
 
 		.benefit {
-			font-size: 20px;
+			font-size: 14px;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 14px;
@@ -241,7 +246,7 @@
 			padding-left: 0;
 
 			li {
-				font-size: 18px;
+				font-size: 13px;
 				margin-left: 0;
 				padding-left: 0;
 
@@ -283,8 +288,8 @@
 		background: #f2f2f2;
 		position: relative;
   		z-index: 1;
-  		padding-top: 150px;
-  		padding-bottom: 110px;
+  		padding-top: 120px;
+  		padding-bottom: 50px;
 
   		&::before {
 
@@ -330,9 +335,9 @@
 				bottom: 0;
 				left: 0;
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+50,f8f8f8+92,f8f8f8+100&0.27+0,1+100 */
-				background: -moz-linear-gradient(left, rgba(242,242,242,0.27) 0%, rgba(242,242,242,0.64) 50%, rgba(242,242,242,0.94) 92%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left, rgba(242,242,242,0.27) 0%,rgba(242,242,242,0.64) 50%,rgba(242,242,242,0.94) 92%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right, rgba(242,242,242,0.27) 0%,rgba(242,242,242,0.64) 50%,rgba(242,242,242,0.94) 92%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				background: -moz-linear-gradient(left, rgba(242,242,242,0.27) 0%, rgba(242,242,242,0.64) 40%, rgba(242,242,242,0.94) 72%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, rgba(242,242,242,0.27) 0%,rgba(242,242,242,0.64) 40%,rgba(242,242,242,0.94) 72%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(242,242,242,0.27) 0%,rgba(242,242,242,0.64) 40%,rgba(242,242,242,0.94) 72%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
 
 
@@ -357,29 +362,30 @@
   			position: relative;
   			z-index: 5;
 			h2 {
-				font-size: 26px;
+				font-size: 20px;
 
 				@include media-breakpoint-down(lg) {
-					font-size: 18px;
+					font-size: 20px;
 				}
 			}
 
 			.title-2 {
 				margin-top: 40px;
-				font-size: 26px;
+				font-size: 20px;
 
 				@include media-breakpoint-down(lg) {
-					font-size: 18px;
+					font-size: 20px;
 				}
 			}
 
 			.list {
-				padding-top: 30px;
-				padding-bottom: 50px;
+				padding-top: 20px;
+    			padding-bottom: 20px;
 
 				.item {
 
-					margin-bottom: 35px;
+					margin-bottom: 15px;
+
 
 					.image {
 						float: left;
@@ -392,7 +398,7 @@
 						margin: 0;
 						padding: 0;
 						margin-left: 20px;
-						font-size: 18px;
+						font-size: 14px;
 
 						@include media-breakpoint-down(lg) {
 							font-size: 14px;
@@ -458,12 +464,12 @@
 }
 
 footer {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 
 	.top {
 		h6 {
-			font-size: 18px;
+			font-size: 14px;
 
 			@include media-breakpoint-down(lg) {
 				font-size: 14px;
@@ -472,7 +478,7 @@ footer {
 	}
 
 	.middle p {
-		font-size: 14px;
+		font-size: 10px;
 		padding-top: 15px;
 		border-top: 2px solid #ffffff;
 
@@ -485,7 +491,7 @@ footer {
 
 		.left {
 			p {
-				font-size: 16px;
+				font-size: 14px;
 
 				@include media-breakpoint-down(lg) {
 					font-size: 14px;

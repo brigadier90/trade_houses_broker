@@ -13079,7 +13079,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px; }
   @media (max-width: 1199.98px) {
     #benefits {
-      margin-top: 120px; } }
+      margin-top: 250px; } }
   @media (max-width: 991.98px) {
     #benefits {
       margin-top: 120px; } }
@@ -13099,16 +13099,19 @@ a.text-dark:hover, a.text-dark:focus {
     #benefits {
       margin-top: 50px; } }
   #benefits .phone img {
-    width: 100%; }
+    width: 130%; }
+    @media (max-width: 1199.98px) {
+      #benefits .phone img {
+        width: 100%; } }
   #benefits .list .title {
     margin-top: 35px; }
   #benefits .list h3 {
-    font-size: 26px; }
+    font-size: 20px; }
     @media (max-width: 1199.98px) {
       #benefits .list h3 {
-        font-size: 18px; } }
+        font-size: 20px; } }
   #benefits .list .benefit {
-    font-size: 20px; }
+    font-size: 14px; }
     @media (max-width: 1199.98px) {
       #benefits .list .benefit {
         font-size: 14px; } }
@@ -13118,7 +13121,7 @@ a.text-dark:hover, a.text-dark:focus {
     margin-left: 20px;
     padding-left: 0; }
     #benefits .list ul li {
-      font-size: 18px;
+      font-size: 13px;
       margin-left: 0;
       padding-left: 0; }
       @media (max-width: 1199.98px) {
@@ -13138,8 +13141,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f2f2f2;
   position: relative;
   z-index: 1;
-  padding-top: 150px;
-  padding-bottom: 110px; }
+  padding-top: 120px;
+  padding-bottom: 50px; }
   #potential a {
     font-size: 14px; }
   #potential::before {
@@ -13190,11 +13193,11 @@ a.text-dark:hover, a.text-dark:focus {
       bottom: 0;
       left: 0;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+50,f8f8f8+92,f8f8f8+100&0.27+0,1+100 */
-      background: -moz-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
+      background: -moz-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 40%, rgba(242, 242, 242, 0.94) 72%, #f2f2f2 100%);
       /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
+      background: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 40%, rgba(242, 242, 242, 0.94) 72%, #f2f2f2 100%);
       /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 50%, rgba(242, 242, 242, 0.94) 92%, #f2f2f2 100%);
+      background: linear-gradient(to right, rgba(242, 242, 242, 0.27) 0%, rgba(242, 242, 242, 0.64) 40%, rgba(242, 242, 242, 0.94) 72%, #f2f2f2 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
       /* IE6-9 */ }
@@ -13214,21 +13217,21 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     z-index: 5; }
     #potential .content-col h2 {
-      font-size: 26px; }
+      font-size: 20px; }
       @media (max-width: 1199.98px) {
         #potential .content-col h2 {
-          font-size: 18px; } }
+          font-size: 20px; } }
     #potential .content-col .title-2 {
       margin-top: 40px;
-      font-size: 26px; }
+      font-size: 20px; }
       @media (max-width: 1199.98px) {
         #potential .content-col .title-2 {
-          font-size: 18px; } }
+          font-size: 20px; } }
     #potential .content-col .list {
-      padding-top: 30px;
-      padding-bottom: 50px; }
+      padding-top: 20px;
+      padding-bottom: 20px; }
       #potential .content-col .list .item {
-        margin-bottom: 35px; }
+        margin-bottom: 15px; }
         #potential .content-col .list .item .image {
           float: left; }
           #potential .content-col .list .item .image img {
@@ -13237,7 +13240,7 @@ a.text-dark:hover, a.text-dark:focus {
           margin: 0;
           padding: 0;
           margin-left: 20px;
-          font-size: 18px; }
+          font-size: 14px; }
           @media (max-width: 1199.98px) {
             #potential .content-col .list .item .text {
               font-size: 14px; } }
@@ -13274,22 +13277,22 @@ a.text-dark:hover, a.text-dark:focus {
         font-size: 18px; } }
 
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 30px;
+  padding-bottom: 20px; }
   footer .top h6 {
-    font-size: 18px; }
+    font-size: 14px; }
     @media (max-width: 1199.98px) {
       footer .top h6 {
         font-size: 14px; } }
   footer .middle p {
-    font-size: 14px;
+    font-size: 10px;
     padding-top: 15px;
     border-top: 2px solid #ffffff; }
     @media (max-width: 1199.98px) {
       footer .middle p {
         font-size: 10px; } }
   footer .bottom .left p {
-    font-size: 16px; }
+    font-size: 14px; }
     @media (max-width: 1199.98px) {
       footer .bottom .left p {
         font-size: 14px; } }
