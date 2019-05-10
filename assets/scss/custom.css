@@ -13124,6 +13124,9 @@ a.text-dark:hover, a.text-dark:focus {
   #benefits .list ul {
     margin-bottom: 30px;
     padding-left: 0; }
+    @media (max-width: 1199.98px) {
+      #benefits .list ul {
+        list-style: none; } }
     #benefits .list ul li {
       font-size: 13px;
       margin-left: 0;

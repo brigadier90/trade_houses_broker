@@ -249,6 +249,10 @@
 			margin-bottom: 30px;
 			padding-left: 0;
 
+			@include media-breakpoint-down(lg) {
+				list-style: none;
+			}
+
 			li {
 				font-size: 13px;
 				margin-left: 0;
