@@ -13005,9 +13005,12 @@ a.text-dark:hover, a.text-dark:focus {
     #banner .content-col h2 {
       font-size: 28px; }
     #banner .content-col p {
-      font-size: 22px; }
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0.4rem; }
     #banner .content-col a {
-      font-size: 14px; }
+      font-size: 14px;
+      margin-top: 30px; }
     @media (max-width: 1199.98px) {
       #banner .content-col {
         text-align: center; } }
@@ -13099,10 +13102,13 @@ a.text-dark:hover, a.text-dark:focus {
     #benefits {
       margin-top: 50px; } }
   #benefits .phone img {
-    width: 130%; }
+    width: 130%;
+    position: relative;
+    left: -30%; }
     @media (max-width: 1199.98px) {
       #benefits .phone img {
-        width: 100%; } }
+        width: 100%;
+        left: 0; } }
   #benefits .list .title {
     margin-top: 35px; }
   #benefits .list h3 {
@@ -13116,9 +13122,7 @@ a.text-dark:hover, a.text-dark:focus {
       #benefits .list .benefit {
         font-size: 14px; } }
   #benefits .list ul {
-    list-style: none;
     margin-bottom: 30px;
-    margin-left: 20px;
     padding-left: 0; }
     #benefits .list ul li {
       font-size: 13px;
@@ -13127,10 +13131,6 @@ a.text-dark:hover, a.text-dark:focus {
       @media (max-width: 1199.98px) {
         #benefits .list ul li {
           font-size: 13px; } }
-      #benefits .list ul li:before {
-        content: '\2014';
-        position: absolute;
-        margin-left: -20px; }
   #benefits .mobile {
     text-align: center; }
     #benefits .mobile ul li:before {
@@ -13142,7 +13142,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   z-index: 1;
   padding-top: 120px;
-  padding-bottom: 50px; }
+  padding-bottom: 60px; }
   #potential a {
     font-size: 14px; }
   #potential::before {
@@ -13284,6 +13284,12 @@ footer {
     @media (max-width: 1199.98px) {
       footer .top h6 {
         font-size: 14px; } }
+  footer .top .contact-info {
+    display: inline-block;
+    float: right; }
+    @media (max-width: 1199.98px) {
+      footer .top .contact-info {
+        float: none; } }
   footer .middle p {
     font-size: 10px;
     padding-top: 15px;
